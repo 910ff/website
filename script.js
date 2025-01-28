@@ -27,6 +27,6 @@ ScrollReveal().reveal('#projects .card', {
     interval: 200
 });
 
-// GSAP Animation for Hero Section (optional)
+
 gsap.from(".hero-content h1", { opacity: 0, y: -50, duration: 1 });
 gsap.from(".hero-content p", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
