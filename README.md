@@ -3,9 +3,9 @@
 Welcome to my collection of cybersecurity projects and studies. Below, you’ll find information on each skill and more.
 
 ## 🚀 Table of Contents
-1.my website(https://910ff.github.io/website/)
-2. [About](#about)
-3. [blogs](#blogs)
+1. [About](#about)
+2. [blogs](#blogs)
+3. 
 ## 🔍 About
 I'm currently learning cybersecurity and creating various projects to practice different hacking techniques and tools. This repo serves as a place to store my work, share what I've learned, and contribute to the cybersecurity community.
 
