@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.10.1/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Linux</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: aqua;
+        }
+
+        td {
+            color: yellowgreen;
+        }
+    </style>
+
+    <a href="../Index.html"> <button class="home">Home</button></a>
+
+    <div class="hero-content">
+
+        <h1 style="color: green;">What is Linux</h1>
+        <div class="about">
+
+            <p>
+            <h4>Linux is an open source operating system</p>
+            </h4>
+
+        </div>
+        <h3>File System Hierarchy</h3>
+        <table class="Hierarchy">
+            <tr>
+                <th>Path</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>The root (/) holds essential boot files and mounts all other filesystems as subdirectories.</td>
+            </tr>
+
+            <tr>
+                <td>/bin</td>
+                <td>Contains essential command binaries.</td>
+            </tr>
+
+            <tr>
+                <td>/boot</td>
+                <td>Consists of the static bootloader, kernel executable, and files required to boot the Linux OS.</td>
+            </tr>
+
+            <tr>
+                <td>/dev</td>
+                <td>Contains device files to facilitate access to every hardware device attached to the system.</td>
+            </tr>
+
+            <tr>
+                <td>/etc</td>
+                <td>Local system configuration files. Configuration files for installed applications may be saved here
+                    as well.</td>
+            </tr>
+
+            <tr>
+                <td>/lib</td>
+                <td>Shared library files that are required for system boot</td>
+            </tr>
+
+            <tr>
+                <td>/media</td>
+                <td>External removable media devices such as USB drives are mounted here.</td>
+            </tr>
+
+            <tr>
+                <td>/home</td>
+                <td>Each user on the system has a subdirectory here for storage.</td>
+            </tr>
+
+            <tr>
+                <td>/usr</td>
+                <td>Contains executables, libraries, man files, etc.</td>
+            </tr>
+
+            <tr>
+                <td>/tmp</td>
+                <td>The operating system and many programs use this directory to store temporary files. This directory
+                    is generally cleared upon system boot and may be deleted at other times without any warning.</td>
+            </tr>
+
+            <tr>
+                <td>/sbin</td>
+                <td>This directory contains executables used for system administration (binary system files).</td>
+            </tr>
+
+            <tr>
+                <td>/root</td>
+                <td>The home directory for the root user.</td>
+            </tr>
+
+            <tr>
+                <td>/opt</td>
+                <td>Optional files such as third-party tools can be saved here.</td>
+            </tr>
+
+            <tr>
+                <td>/mnt</td>
+                <td>Temporary mount point for regular filesystems.</td>
+            </tr>
+
+            <tr>
+                <td>/var</td>
+                <td>This directory contains variable data files such as log files, email in-boxes, web application
+                    related files, cron files, and more.</td>
+            </tr>
+
+        </table>
+
+        <h3>Terminal</h3>
+        <p>Terminal is a command line application to tell our linux system what do we need, heres how it looks like:</p>
+        <code>┌──(user㉿linux)-[~]
+└─$ </code>
+        <h3>(user㉿linux)</h3>
+        <p>
+            <cmd>(user㉿linux)</cmd> user is gonna be your user and linux is gonna be your hostname
+        </p>
+
+        <h3>ls</h3>
+        <p>
+            <cmd>ls</cmd> stand for list this is going to list the directory you are in
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$ ls
+        Applications   Downloads   Pictures           
+        Desktop        Music       Templates     
+        Documents      Public      Videos
+    </code>
+
+        <h3>cd</h3>
+        <p>
+            <cmd>cd</cmd> stand for change directory use this command to change directory, Here is an example:
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$ cd Documents
+
+┌──(user㉿linux)-[~/Documents]
+└─$ </code>
+
+        <h3>..</h3>
+        <p>
+            <cmd>..</cmd> will make you go back in directory
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$ cd Documents
+            
+┌──(user㉿linux)-[~/Documents]
+└─$  cd ..
+
+┌──(user㉿linux)-[~]
+└─$ </code>
+
+
+        <h3>mkdir</h3>
+        <p>
+            <cmd>mkdir</cmd> stand for make directory this will make a folder
+        </p>
+        <code>┌──(user㉿linux)-[~/Documents]
+└─$ mkdir Folder
+
+┌──(user㉿linux)-[~/Documents]
+└─$ ls
+        python         html        Pictures               
+        help           Folder
+    </code>
+        <h3>rm</h3>
+        <p>
+            <cmd>rm</cmd> stand for remove this will delete the file you choose
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$ls 
+        Applications   Downloads   Pictures           
+        Desktop        Music       Templates     
+        Documents      Public      Videos
+        Deleteme.txt
+
+┌──(user㉿linux)-[~]
+└─$rm Deleteme.txt
+
+┌──(user㉿linux)-[~]
+└─$ls 
+        Applications   Downloads   Pictures           
+        Desktop        Music       Templates     
+        Documents      Public      Videos</code>
+        <h3>exit</h3>
+        <p>
+            <cmd>exit</cmd> will exit
+        </p>
+        <h3>which</h3>
+        <p>
+            <cmd>which</cmd> this command will tell you where is this command stored
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$ which rm  
+/usr/bin/rm</code>
+        <h3>sudo</h3>
+        <p>
+            <cmd>sudo</cmd> allows users to run commands with privileges that only root user have
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$sudo rm admin.png
+
+[sudo] password for user: 
+</code>
+
+        <h3>ps</h3>
+        <p>
+            <cmd>ps</cmd> Shows process status.
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$sudo ps
+        PID TTY          TIME CMD
+        14032 pts/0    00:00:00 zsh
+        14212 pts/0    00:00:00 ps
+</code>
+
+        <h3>who</h3>
+        <p>
+            <cmd>who</cmd> Shows who logged in
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$sudo who
+    user
+</code>
+
+        <h3>lsblk</h3>
+        <p>
+            <cmd>lsblk</cmd> Lists block devices
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$sudo lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    0 931.5G  0 disk 
+nvme0n1     259:0    0 232.9G  0 disk 
+
+</code>
+
+        <h3>man "tool"</h3>
+        <p>
+            <cmd>man</cmd> Opens man pages for the specified tool
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$sudo man ls
+</code>
+
+        <h3>apropos "keyword"</h3>
+        <p>
+            <cmd>apropos</cmd> Opens man pages for the specified tool
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$apropos google
+chromium (1)         - the web browser from Google
+</code>
+
+        <h3>cat</h3>
+        <p>
+            <cmd>cat</cmd> print files
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$cat cats.txt
+
+mew :3</code>
+
+        <h3>cat</h3>
+        <p>
+            <cmd>whoami</cmd> Display who are you
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$whoami
+
+user</code>
+
+
+        <h3>hostname</h3>
+        <p>
+            <cmd>hostname</cmd> Display your hostname
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$hostname
+linux</code>
+
+
+        <h3>pwd</h3>
+        <p>
+            <cmd>pwd</cmd> Display your current directory
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$pwd
+linux</code>
+
+
+        <h3>ifconifg</h3>
+        <p>
+            <cmd>ifconfig</cmd> The ifconfig utility is used to assign or view an address to a network
+            interface and/or configure network interface parameters.
+        </p>
+        <code>┌──(user㉿linux)-[~]
+└─$ifconifg
+</code>
+
+
+        <h3>ip</h3>
+        <p>
+            <cmd>ip</cmd> Ip is a utility to show or manipulate routing, network devices, interfaces,</p>
+            and tunnels.
+            <code>┌──(user㉿linux)-[~]
+└─$ip
+</code>
+
+        <h3>ss</h3>
+        <p>
+            <cmd>ss</cmd> utility to investigate sockets.</p>
+            <code>┌──(user㉿linux)-[~]
+└─$ss</code>
+
+
+        <h3>netstat</h3>
+        <p>
+            <cmd>netstat</cmd>Display network status.</p>
+            <code>┌──(user㉿linux)-[~]
+└─$netstat</code>
+            </section>
+
+        <h3>lsusb</h3>
+        <p>
+            <cmd>lsusb</cmd> Lists USB devices.</p>
+            <code>┌──(user㉿linux)-[~]
+└─$lsusb
+    Bus 001 Device 002: ID 1532:008a Razer USA, Ltd RZ01-0325, Gaming Mouse [Viper Mini]</code>
+
+
+        <h3>su</h3>
+        <p>
+            <cmd>su</cmd> change from user to user </p>
+            <code>┌──(user㉿linux)-[~]
+└─$ sudo su root
+password:
+┌──(root㉿linux)-[/home/user]
+└─# 
+Bus 001 Device 002: ID 1532:008a Razer USA, Ltd RZ01-0325, Gaming Mouse [Viper Mini]</code>
+
+
+        <h3>useradd</h3>
+        <p>
+            <cmd>useradd "user"</cmd> Add user </p>
+            <code>┌──(user㉿linux)-[~]
+└─$useradd batman</code>
+
+        <h3>usermod</h3>
+        <p>
+            <cmd>usermod "user"</cmd> mod a user</p>
+            <code>┌──(user㉿linux)-[~]
+└─$usermod batman</code>
+
+        <h3>userdel</h3>
+        <p>
+            <cmd>userdel "user"</cmd> delete a user</p>
+            <code>┌──(user㉿linux)-[~]
+└─$userdel batman</code>
+
+        <h3>addgroup</h3>
+        <p>
+            <cmd>addgroup "group"</cmd> add a group to the system</p>
+            <code>┌──(user㉿linux)-[~]
+└─$addgroup super_heros</code>
+
+
+
+<h3>delgroup</h3>
+<p>
+    <cmd>delgroup "group"</cmd> delete a group from the system</p>
+    <code>┌──(user㉿linux)-[~]
+└─$delgroup super_heros</code>
+
+
+<h3>passwd</h3>
+<p>
+    <cmd>passwd "user" "password"</cmd> Chnage user password</p>
+    <code>┌──(user㉿linux)-[~]
+└─$passwd batman 1234</code>
+
+
+<h3>dpkg</h3>
+<p>
+    <cmd>dpkg</cmd> Install or remove and configure .deb packages</p>
+    <code>┌──(user㉿linux)-[~]
+└─$dpkg install chrome.deb</code>
+
+
+<h3>apt</h3>
+<p>
+    <cmd>apt</cmd> High-level package management command-line utility </p>
+    <code>┌──(user㉿linux)-[~]
+└─$sudo apt install firefox</code>
+
+<h3>snap</h3>
+<p>
+    <cmd>snap</cmd> same as apt but different</p>
+    <code>┌──(user㉿linux)-[~]
+└─$sudo snap firefox</code>
+
+
+<h3>systemctl</h3>
+<p>
+    <cmd>systemctl</cmd> system services maneger</p>
+    <code>┌──(user㉿linux)-[~]
+└─$systemctl --help</code>
+
+
+<h3>kill</h3>
+<p>
+    <cmd>kill</cmd> any service</p>
+    <code>┌──(user㉿linux)-[~]
+└─$kill chrome.exe</code>
+
+<h3>bg</h3>
+<p>
+    <cmd>bg</cmd> stand for background puts any prosses in the background</p>
+    <code>┌──(user㉿linux)-[~]
+└─$bg ping google.com</code>
+
+
+<h3>fg</h3>
+<p>
+    <cmd>fg</cmd> stand for frontground puts any prosses in the frontground</p>
+    <code>┌──(user㉿linux)-[~]
+└─$fg ping google.com</code>
+
+
+<h3>jobs</h3>
+<p>
+    <cmd>jobs</cmd> Lists all processes that are running in the background</p>
+    <code>┌──(user㉿linux)-[~]
+└─$jobs</code>
+
+
+<h3>curl</h3>
+<p>
+    <cmd>curl</cmd> Command-line utility to transfer data from or to a server</p>
+    <code>┌──(user㉿linux)-[~]
+└─$curl 192.168.1.121/nc.exe</code>
+
+
+<h3>clear</h3>
+<p>
+    <cmd>clear</cmd> the Terminal</p>
+    <code>┌──(user㉿linux)-[~]
+└─$clear</code>
+
+
+<h3>touch</h3>
+<p>
+    <cmd>touch</cmd> Create an empty file</p>
+    <code>┌──(user㉿linux)-[~]
+└─$touch fire.txt</code>
+
+
+<h3>tree</h3>
+<p>
+    <cmd>tree</cmd> show files in a tree way</p>
+    <code>┌──(user㉿linux)-[~]
+└─$tree 
+
+├── python
+│   ├── data.py
+│   ├── Login.py
+│   ├── Mikustore.py
+│   ├── ping.py
+│   ├── __pycache__
+│   │   └── ping.cpython-312.pyc
+│   ├── store.py
+│   └── ur ip.py
+└── windows 11
+    └── Win11_24H2_EnglishInternational_x64.iso</code>
+            
+
+
+<h3>mv</h3>
+<p>
+    <cmd>mv</cmd> mv stand for move this will move files </p>
+    <code>┌──(user㉿linux)-[~]
+└─$mv password.txt home/Documents/myfolder</code>
+
+
+<h3>cp</h3>
+<p>
+    <cmd>cp</cmd> mv stand for copy this will copy files </p>
+    <code>┌──(user㉿linux)-[~]
+└─$cp password.txt home/Documents/myfolder</code>
+
+
+<h3>find</h3>
+<p>
+    <cmd>find</cmd> this will find any file you wish </p>
+    <code>┌──(user㉿linux)-[~]
+└─$find -name password.txt </code>
+
+
+<h3>nano</h3>
+<p>
+    <cmd>nano</cmd> is a Terminal text editor </p>
+    <code>┌──(user㉿linux)-[~]
+└─$nano password.txt </code>
+
+<h3>locate</h3>
+<p>
+    <cmd>locate</cmd> this will locate databases from the system </p>
+    <code>┌──(user㉿linux)-[~]
+└─$locate nc.exe</code>
+
+
+<h3>grep</h3>
+<p>
+    <cmd>grep</cmd> Searches for specific results that contain given patterns. </p>
+    <code>┌──(user㉿linux)-[~]
+└─$ systemctl status | grep apache2
+                 │ │   └─5995 grep --color=auto apache2
+</code>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+            <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Tring My Best in cybersecurity, tutorials, and more!</p>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="html.html" class="html">HTML</a>
+                </div>
+                <div class="card">
+                    <a href="python.html" class="python">Python</a>
+                </div>
+
+                <div class="card">
+                    <a href="linux.html" class="linux"> Linux </a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="windows.html" class="windows"> Windows</a>
+                </div>
+                <div class="card">
+                    <a href="css.html" class="css"> CSS</a>
+                </div>
+                <div class="card">
+                    <a href="nmap.html" class="nmap">Nmap</a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="javaScipt.html" class="JavaScript"> JavaScript</a>
+                </div>
+                <div class="card">
+                    <a href="Bash.html" class="Bash">Bash</a>
+                </div>
+                <div class="card">
+                    <a href="php.html" class="php">php</a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="ccna.html" class="ccna"> CCNA</a>
+                </div>
+                <div class="card">
+                    <a href="submasking.html" class="submasking">SubMasking</a>
+                </div>
+                <div class="card">
+                    <a href="Security.html" class="Security">Security+</a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="ccnp.html" class="ccnp">CCNP</a>
+                </div>
+                <div class="card">
+                    <a href="A.html" class="AA">A+</a>
+                </div>
+                <div class="card">
+                    <a href="CEH.html" class="CEH">CEH</a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="SQL.html" class="SQL">SQL</a>
+                </div>
+                <div class="card">
+                    <a href="Ruby.html" class="Ruby">Ruby</a>
+                </div>
+                <div class="card">
+                    <a href="Perl.html" class="Perl">Perl</a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-cards">
+                <div class="card">
+                    <a href="docker.html" class="docker">Docker</a>
+                </div>
+                <div class="card">
+                    <a href="Firewall.html" class="Firewall">Firewall</a>
+                </div>
+                <div class="card">
+                    <a href="Wireshark.html" class="Wireshark">Wireshark</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Connect with me on <a href="https://github.com/910ff" target="_blank">GitHub</a></p>
+        </footer>
+
+        <script src="../script.js"></script>
+</body>
+
+</html>
