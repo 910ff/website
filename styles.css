@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background-color: #1a1a1a; /* Dark gray color, you can change this to any color you like */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    /* Removed animation for h1 */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    /* Removed animation for p */
+}
+
+/* About Me Section */
+#about {
+    padding: 40px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    background-color: #2b2b2b;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+/* Blog Section */
+#blog {
+    padding: 40px;
+    background-color: #1e1e1e;
+    text-align: center;
+    
+}
+.blog-cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.link {
+    color: #ff5733; /* Customize link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ff3300;
+}
+a{
+    text-decoration: none;
+    color: #ff3300;
+}
+a:hover{
+    text-decoration: underline;
+}
+.python{
+    color: rgb(92, 106, 210);
+
+}
+
+.linux{
+    color: yellow;
+}
+
+.windows{
+    color: rgb(143, 143, 232);
+}
+
+.css{
+    color: lightblue;
+}
+
+.nmap{
+    color: rgb(255, 0, 225);
+}
+.CEH{
+    color: green;
+}
+
+.ccna{
+    color: rgb(31, 103, 31);
+}
+.submasking{
+    color: lightgray;
+}
+
+.Security{
+    color: rgb(93, 93, 237);
+}
+.ccnp{
+    color: teal;
+}
+.Bash{
+    color: forestgreen;
+}
+.JavaScript{
+    color: yellow;
+}
+.php{
+    color: purple;
+}
+
+code {
+    display: block;
+    background-color: black;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    width: fit-content;
+    border-radius: 10px;
+    border-color: rgb(60, 60, 60);
+    border-style: solid;
+    border-top-width: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+code:hover{
+    transform: translateY(-10px);
+}
+
+cmd {
+    display: flexbox;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    width: fit-content;
+    border-radius: 5px;
+    color:#FFFF33;
+}
+
+note {
+    color: red;
+
+}
+.home{
+    color: aqua;
+    background-color: #121212;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    left: 50%;
+    width: fit-content;
+}
+.Hierarchy{
+    background-color: #122222;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    text-align: left;
+    text-align-last: left;
+}
