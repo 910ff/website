@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,10 +7,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero Section */
 #hero {
     height: 100vh;
-    background-color: #1a1a1a; /* Dark gray color, you can change this to any color you like */
+    background-color: #1a1a1a; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,22 +19,18 @@ body {
 
 .hero-content h1 {
     font-size: 3rem;
-    /* Removed animation for h1 */
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    /* Removed animation for p */
 }
 
-/* About Me Section */
 #about {
     padding: 40px;
     text-align: center;
     background-color: #1e1e1e;
 }
 
-/* Projects Section */
 #projects {
     padding: 40px;
     background-color: #2b2b2b;
@@ -66,7 +60,6 @@ body {
     margin: 0;
 }
 
-/* Blog Section */
 #blog {
     padding: 40px;
     background-color: #1e1e1e;
@@ -79,7 +72,6 @@ body {
     gap: 20px;
 }
 
-/* Footer */
 footer {
     background-color: #121212;
     padding: 20px;
@@ -95,7 +87,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -106,8 +97,8 @@ footer a:hover {
 }
 
 .link {
-    color: #ff5733; /* Customize link color */
-    text-decoration: none; /* Remove underline */
+    color: #ff5733;
+    text-decoration: none;
 }
 
 .link:hover {
